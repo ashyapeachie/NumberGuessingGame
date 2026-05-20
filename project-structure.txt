@@ -1,0 +1,7 @@
+numberguessinggame/
+│
+├── GuessTheNum.py       # main game logic
+├── main.py              # entry point (optional but professional)
+├── README.md            # project description
+├── project-structure.txt 
+└── requirements.txt     # optional (no external libs, but still good practice)
