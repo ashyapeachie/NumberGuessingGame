@@ -26,29 +26,17 @@ def get_difficulty():
 def play_game():
     print("\n🎮 Welcome to Guess the Number!")
 
+    max_num, attempts_left = get_difficulty()
+    number_to_guess = random.randint(1, max_num)
+    
+    guess = None
+    attempt_count = 0
+
+    #print statement
+
+    while guess != number_to_guess and attempts_left > 0:
+        try:  
+
 def main():
     play_game()
 
-if __name__ == "__main__":
-    main()
-    #guess = None
-    #this function generates a random int between 1 and 100
-
-    #printed intro and prompt to guess the right # til correct to the user
-
-    #while guess != number_to_guess:
-        #try:
-            #guess = int(input("Guess a number: "))
-            #if guess < number_to_guess:
-                #print("Too low!")
-            #elif guess > number_to_guess:
-                #print("Too high!")
-            #else: 
-                #print("You guess the correct number- YAY!")
-        #except ValueError:
-            #print("Please enter a valid number: ")
-    #feedback is given to the user after each guess (too high, too low)
-        #may add a "getting closer" feedback option
-
-#guess_the_number()
-#running the progrom(game)
