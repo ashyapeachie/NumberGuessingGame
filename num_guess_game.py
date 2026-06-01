@@ -32,7 +32,7 @@ def play_game():
     guess = None
     attempt_count = 0
 
-    #print statement
+    print("\nI've picked a number somewhere between 1 and {max_num}, good luck!")
 
     while guess != number_to_guess and attempts_left > 0:
         try:
