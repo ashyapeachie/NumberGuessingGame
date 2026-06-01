@@ -35,8 +35,34 @@ def play_game():
     #print statement
 
     while guess != number_to_guess and attempts_left > 0:
-        try:  
+        try:
+            guess = int()
+            attempt_count += 1
+            attempts_left -= 1
+
+            if guess < number_to_guess:
+                print()
+            elif guess > number_to_guess:
+                print()
+            else:
+                print()
+                return
+            if attempts_left > 0:
+                print()
+
+        except ValueError:
+            print()
+
+    print()
 
 def main():
-    play_game()
+    while True:
+        play_game()
 
+        again = input()
+        if again != "":
+            print()
+            break
+
+if __name__ == "__main__":
+    main()
