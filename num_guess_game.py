@@ -51,17 +51,17 @@ def play_game():
                 print()
 
         except ValueError:
-            print()
+            print("Please enter a valid number")
 
-    print()
+    print("\nGame Over! The nummber was {number_to_guess}")
 
 def main():
     while True:
         play_game()
 
-        again = input()
-        if again != "":
-            print()
+        again = input("\nPlay again? (y/n): ").lower
+        if again != "y":
+            print("Thanks for playing!")
             break
 
 if __name__ == "__main__":
