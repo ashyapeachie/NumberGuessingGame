@@ -15,9 +15,7 @@ A simple Python command-line game where the player tries to guess a randomly gen
 - modular project organization
   
 ## ▶️ How to Run
-```bash
-python guess_game.py
----
+
 
 ## 👩‍💻 Author
 Ashya H.
